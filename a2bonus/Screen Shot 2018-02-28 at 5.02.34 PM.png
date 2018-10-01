@@ -1,0 +1,34 @@
+from pylab import *
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.cbook as cbook
+import time
+from scipy.misc import imread
+from scipy.misc import imresize
+import matplotlib.image as mpimg
+from scipy.ndimage import filters
+import urllib
+from numpy import random
+
+#import cPickle
+import os
+from scipy.io import loadmat
+import hashlib
+
+import torch
+from torch.autograd import Variable
+import torchvision.models as models
+import torchvision
+
+import torch.nn as nn
+
+model = Sequential()
+model.add(Convolution2D(1,
+                        3,
+                        3,
+                        input_shape=(227,227)))
+
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size(5, 5)))
+
+def print_img(model, data):
